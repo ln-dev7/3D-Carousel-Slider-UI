@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   line-height: 1.5;
+  font-optical-sizing: auto;
   font-weight: 400;
+  font-style: normal;
 
   color-scheme: light dark;
   color: #242424;
@@ -15,4 +19,29 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  background: radial-gradient(50% 50% at 50% 50%, #FFCCD9 0%, #FF3D6C 100%);
+  // background: radial-gradient(50% 50% at 50% 50%, #FFE4C1 0%, #FF9B16 100%);
+  // background: radial-gradient(50% 50% at 50% 50%, #E0FFC1 0%, #7FD925 100%);
+}
+
+.beer-1 {
+  top: auto;
+  left: auto;
+  transform: rotate(0deg);
+  opacity: 1;
+}
+.beer-2 {
+  top: -20px;
+  left: -750px;
+  transform: rotate(48deg);
+  opacity: 0;
+}
+.beer-3 {
+  top: 500px;
+  left: 1250px;
+  transform: rotate(120deg);
+  opacity: 0;
 }
